@@ -1,0 +1,9 @@
+.header-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-items {
+    display: flex;
+    justify-content: center;
+}
