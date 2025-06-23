@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  max-width: 11700px;
 }
 
 .Business-part {
@@ -16,7 +17,7 @@
 
 .header {
   height: 120px;
-  margin: 0px 120px 10px 120px;
+  margin: 0px 280px 0px 340px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,22 +49,19 @@
 .nav-link {
   color: #222;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 800;
   padding-top: 7px;
   height: 35px;
   text-decoration: none;
   position: relative;
 }
 
-.nav-link::after {
-  /* content: "^"; */
+/* .nav-link::after {
+  content: "^";
   font-size: 10px;
   margin-left: 5px;
-}
+} */
 
-.nav-link.no-dropdown::after {
-  content: "";
-}
 
 .right-section {
   display: flex;
@@ -206,7 +204,7 @@
   padding: 15px;
 }
 
-.btn-outline {
+/* .btn-outline {
   margin-bottom: 100px;
   border: 0.1px solid rgb(192, 187, 187);
   background-color: white;
@@ -215,15 +213,39 @@
   width: 150px;
   font-size: 10px;
   font-weight: 800;
+} */
+
+.btn-outline {
+  margin-bottom: 100px;
+  font-size: 10px;
+  border-radius: 25px;
+  padding: 13px 25px 13px 25px;
+  border: 0.1px solid rgb(192, 187, 187);
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-in;
 }
 
+.btn-outline:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+
 /* services part */
+
+.services-part {
+  margin: 0px 150px 100px 120px;
+}
 
 .services-top-part {
   display: flex;
   justify-content: center;
   gap: 100px;
-  margin: 0px 150px 100px 120px;
+  margin-bottom: 50px;
 }
 
 .services-top-part h6 {
@@ -237,5 +259,87 @@
 
 .services-top-part p {
   margin-top: 45px;
+  font-size: 12px;
+}
+
+.card-design {
+  margin-bottom: 25px;
+  border: 1px dashed #eee;
+  border-radius: 12px;
+  width: 320px;
+  height: 250px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: transform 0.5s;
+}
+
+.card-design:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(255, 252, 252, 0.904);
+}
+
+.card-logo {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.card-design h3 {
+  padding: 10px;
+}
+
+.card-design p {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.card-design button {
+  margin-top: 10px;
+  border: 0.1px solid rgb(192, 187, 187);
+  background-color: white;
+  border-radius: 30px;
+  padding: 13px 25px 13px 25px;
+  width: 110px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.card {
+  margin: 0px 280px 0px 340px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-card .btn {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-in;
+}
+
+.all-card .btn:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.company-work {
+  margin: 100px 200px 100px 550px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  border: 1px dashed #eee;
+  border-radius: 12px;
+  width: 620px;
+  height: 150px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.company-work h2 {
+  font-size: 40px;
+}
+
+.company-work p {
   font-size: 12px;
 }
