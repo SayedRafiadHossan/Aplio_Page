@@ -16,15 +16,25 @@
   margin-left: 150px;
 }
 
+.full-navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  padding: 20px 0px;
+  transition: all;
+  transition-duration: 300ms;
+}
+
 .header {
   width: 1150px;
-  position: fixed;
-  height: 120px;
   margin: 0px 280px 0px 380px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 60px;
 }
 
 .logo {

@@ -15,18 +15,11 @@
     />
   </head>
 
-  <body>
-    <!-- Business-part -->
-
-    <div class="Business-part">
-      <img
-        class="header-img"
-        src="/assets/images/hero-grid-shape-top.png"
-        alt=""
-      />
+  <body onscroll="autoNavbar()">
+    <nav id="full-navbar" class="full-navbar">
       <div class="header">
         <div class="logo">aplio</div>
-        <nav class="nav-container">
+        <div class="nav-container">
           <a
             href="#"
             class="nav-link"
@@ -41,7 +34,7 @@
           <a href="#" class="nav-link no-dropdown">Pages</a>
           <a href="#" class="nav-link no-dropdown">Blog</a>
           <a href="#" class="nav-link no-dropdown">Contact Us</a>
-        </nav>
+        </div>
         <div class="right-section">
           <div onclick="openSearchModal()" class="search-icon">
             <svg
@@ -57,6 +50,16 @@
           <a href="#" class="demo-button">Request Demo</a>
         </div>
       </div>
+    </nav>
+
+    <!-- Business-part -->
+
+    <div class="Business-part">
+      <img
+        class="header-img"
+        src="/assets/images/hero-grid-shape-top.png"
+        alt=""
+      />
       <div class="home-first-part">
         <div class="trusted-businesses">
           <h6>50K+ TRUSTED BUSINESSES</h6>
