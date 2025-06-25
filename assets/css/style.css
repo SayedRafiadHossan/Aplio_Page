@@ -8,7 +8,7 @@
 
 .Business-part {
   height: 720px;
-  background-color: #F6F8F1;
+  background-color: #f6f8f1;
 }
 
 .Business-part .header-img {
@@ -58,7 +58,6 @@
   position: relative;
 }
 
-
 .right-section {
   display: flex;
   align-items: center;
@@ -96,12 +95,10 @@
   transition: all 0.5s ease-in;
 }
 
-
 .demo-button:hover {
   background-position: left bottom;
   color: white;
 }
-
 
 /* Trusted-businesses */
 
@@ -163,13 +160,10 @@
   transition: all 0.5s ease-in;
 }
 
-
 .trusted-businesses button:hover {
   background-position: left bottom;
   color: white;
 }
-
-
 
 .trusted-businesses-left-part #img-1 {
   width: 350px;
@@ -194,7 +188,6 @@
   height: 250px;
   margin-left: 40px;
 }
-
 
 /* companies-part */
 
@@ -245,7 +238,6 @@
   background-position: left bottom;
   color: white;
 }
-
 
 /* services part */
 
@@ -300,7 +292,6 @@
 .card-design-parent:hover {
   transform: scale(1.1);
 }
-
 
 .card-logo {
   font-size: 30px;
@@ -379,8 +370,7 @@
 /* <!-- Data Integration part --> */
 
 .integration-color {
-  background-color: #F6F8F1;
-
+  background-color: #f6f8f1;
 }
 
 .integration-part {
@@ -414,7 +404,6 @@
 .integration-right-part-img3 {
   height: 300px;
 }
-
 
 .integration-left-part h4 {
   margin-bottom: 10px;
@@ -535,7 +524,6 @@
   color: white;
 }
 
-
 /* <!-- Top Integration Part --> */
 
 .top-integration-part {
@@ -560,7 +548,6 @@
   margin-bottom: 20px;
 }
 
-
 /* faq part-----------*/
 
 .faq-part img {
@@ -570,7 +557,7 @@
 
 .faq-part {
   padding-bottom: 100px;
-  background-color: #F6F8F1;
+  background-color: #f6f8f1;
 }
 
 .faq-section {
@@ -621,7 +608,6 @@
   width: 480px;
   height: 60px;
 }
-
 
 .faq-question {
   width: 450px;
@@ -786,7 +772,6 @@
   margin-bottom: 10px;
 }
 
-
 .financial-all-card {
   margin-top: 30px;
   margin-bottom: 100px;
@@ -849,18 +834,17 @@
 .icon {
   margin-top: 7px;
   font-size: 5px;
-  color: #D8DBD0;
+  color: #d8dbd0;
 }
 
 .card-paragraph {
   font-size: 14px;
 }
 
-
 /* <!-- trail part --> */
 
 .trail-part {
-  background-color: #F6F8F1;
+  background-color: #f6f8f1;
 }
 
 .trail-part img {
@@ -931,4 +915,41 @@
 .footer-bottom-part-right {
   display: flex;
   gap: 50px;
+}
+
+/* ajbvjqav */
+
+.search-backdrop {
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.search-card {
+  padding: 10px;
+  background: white;
+  width: 350px;
+  margin-inline: auto;
+  border-radius: 12px;
+}
+
+.search-card > div {
+  border: 1px dashed #eee;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.search-card-para {
+  display: flex;
+  gap: 50px;
+}
+
+.search-card-para button {
+  all: unset;
+  background-color: antiquewhite;
 }
