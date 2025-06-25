@@ -21,7 +21,7 @@
   left: 0;
   right: 0;
   position: fixed;
-  z-index: 99999;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(0px);
   padding: 20px 0px;
@@ -930,6 +930,7 @@
 /* ajbvjqav */
 
 .search-backdrop {
+  z-index: 20;
   padding-top: 20px;
   position: fixed;
   top: 0;
