@@ -146,9 +146,11 @@
 }
 
 .trusted-businesses p {
-  font-size: 13px;
+  font-size: 12px;
   margin-bottom: 40px;
   line-height: 1.8;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .trusted-businesses .email-box {
@@ -227,6 +229,8 @@
 .companies-part p {
   font-size: 12px;
   margin-bottom: 60px;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .companies-img {
@@ -286,6 +290,8 @@
   margin-top: 38px;
   font-size: 12px;
   line-height: 1.8;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .card-container {
@@ -392,6 +398,8 @@
 
 .company-work p {
   font-size: 12px;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 /* <!-- Data Integration part --> */
@@ -452,6 +460,8 @@
   font-size: 13px;
   margin-bottom: 25px;
   line-height: 1.8;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .integration-point-part ul {
@@ -527,6 +537,8 @@
 .solution-right-part p {
   font-size: 12px;
   margin-bottom: 20px;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .solution-list-part {
@@ -534,6 +546,8 @@
   justify-content: space-between;
   font-size: 13px;
   margin-bottom: 30px;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .solution-button {
@@ -581,6 +595,8 @@
 .top-integration-part p {
   font-size: 13px;
   margin-bottom: 20px;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 /* faq part-----------*/
@@ -623,6 +639,8 @@
 
 .faq-left-part p {
   font-size: 13px;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .faq-item-parent {
@@ -678,6 +696,8 @@
   font-size: 13px;
   color: #3333339c;
   margin: 15px;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 /* <!-- customer comments part --> */
@@ -919,6 +939,8 @@
 .trail-part-content p {
   font-size: 13px;
   line-height: 1.8;
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
 }
 
 .trail-list-part {
@@ -948,6 +970,13 @@
 .footer-left-part {
   width: 350px;
 }
+
+.footer-left-part p {
+  font-family: "Inter", Sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+
 
 .explore-part a {
   font-size: 13px;
