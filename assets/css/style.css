@@ -48,7 +48,8 @@
   background-color: #222;
 }
 
-.nav-container {
+.nav-container ul {
+  list-style-type: none;
   background: white;
   padding: 10px 25px;
   border-radius: 30px;
@@ -148,7 +149,7 @@
 }
 
 .trusted-businesses .email-box {
-  width: 300px;
+  width: 400px;
   height: 45px;
   border-radius: 25px;
   border: none;
@@ -162,7 +163,7 @@
   height: 40px;
   border-radius: 25px;
   position: relative;
-  margin-left: 197px;
+  margin-left: 297px;
   margin-top: 2.5px;
   background: linear-gradient(to right, rgb(49, 46, 46) 50%, black 50%);
   background-size: 200% 100%;
@@ -348,6 +349,7 @@
 }
 
 /* <!-- companies Project Part --> */
+
 .company-work-parents {
   position: absolute;
   left: 0;
@@ -572,87 +574,99 @@
 
 /* faq part-----------*/
 
-.faq-part img {
-  position: absolute;
-  margin-left: 150px;
+
+/* FAQ */
+
+.faq-background {
+  /* background-image: url(../images/hero-grid-shape-top.png); */
+  background-color: #F6F8F1;
+  height: 600px;
 }
 
-.faq-part {
-  padding-bottom: 100px;
-  background-color: #f6f8f1;
-}
-
-.faq-section {
-  padding-top: 100px;
-  position: relative;
-  display: flex;
-  gap: 50px;
-  max-width: 1000px;
-  margin: 0 auto;
-  align-items: flex-start;
-}
-
-.faq-left {
-  flex: 1;
-}
-
-.faq-left h5 {
-  font-size: 14px;
+.faq-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px;
   color: #333;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding-top: 100px;
+}
+
+.faq-left-part {
+  width: 470px;
+}
+
+.faq-right-part {
+  width: 600px;
+}
+
+.faq-left-part h5 {
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
-.faq-left h1 {
-  font-size: 32px;
+.faq-left-part h2 {
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
-.faq-left p {
-  color: #444;
-  line-height: 1.6;
+.faq-left-part p {
   font-size: 13px;
 }
 
-.faq-right {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.faq-item-parent {
+  overflow: hidden;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 25px;
 }
 
-.faq-card {
-  background-color: white;
-  margin: 5px auto 0px;
-  padding: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-  border-radius: 12px;
-  width: 480px;
-  height: 60px;
+.faq-item {
+  padding: 5px;
+}
+
+.faq-item-parent button {
+  border: 1px dashed #eee;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .faq-question {
-  width: 450px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px dashed #eee;
-  border-radius: 12px;
-  height: 40px;
-  padding: 8px;
-  text-align: center;
+  background-color: white;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+  margin: 0;
 }
 
-.faq-question i {
-  font-size: 18px;
-  margin-top: 4px;
-  margin-right: 3px;
+.faq-question .arrow {
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease;
+  margin-top: 2px;
+}
+
+.faq-question h3 {
+  padding: 5px;
 }
 
 .faq-answer {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: white;
+}
+
+.faq-answer p {
+  font-size: 13px;
+  color: #3333339c;
+  margin: 15px;
 }
 
 /* <!-- customer comments part --> */
@@ -925,6 +939,14 @@
   color: black;
 }
 
+.explore-part ul {
+  list-style: none;
+}
+
+.explore-part-li a:hover {
+  color: rgb(177 227 70);
+}
+
 .footer-bottom-part {
   font-size: 14px;
   padding-bottom: 50px;
@@ -939,7 +961,9 @@
   gap: 50px;
 }
 
-/* ajbvjqav */
+
+
+/* search button part */
 
 .search-backdrop {
   z-index: 20;
@@ -975,92 +999,4 @@
 .search-card-para button {
   all: unset;
   background-color: antiquewhite;
-}
-
-
-/* FAQ */
-
-/* Style for the main FAQ container */
-.faq-container {
-  max-width: 800px;
-  /* Limit the width for better readability */
-  margin: 50px auto;
-  /* Center the container and add vertical spacing */
-  padding: 20px;
-  font-family: 'Arial, sans-serif';
-  color: #333;
-  /* Base text color */
-}
-
-/* Style for the main title */
-.faq-container h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #2c3e50;
-  /* Dark blue color for the title */
-}
-
-/* Style for each FAQ item */
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  /* Light gray border between items */
-  overflow: hidden;
-  /* Hide overflowing content */
-}
-
-/* Style for the question buttons */
-.faq-question {
-  background-color: #ecf0f1;
-  /* Light gray background */
-  width: 100%;
-  padding: 20px;
-  text-align: left;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  transition: background-color 0.3s ease;
-  /* Smooth background transition on hover */
-}
-
-/* Hover effect for question buttons */
-.faq-question:hover {
-  background-color: #d0d7de;
-  /* Slightly darker gray on hover */
-}
-
-/* Style for the arrow icon */
-.faq-question .arrow {
-  position: absolute;
-  right: 20px;
-  transition: transform 0.3s ease;
-  /* Smooth rotation transition */
-}
-
-/* Rotate the arrow when the question is active (expanded) */
-.faq-question.active .arrow {
-  transform: rotate(180deg);
-  /* Rotate arrow 180 degrees */
-}
-
-/* Style for the answer sections */
-.faq-answer {
-  max-height: 0;
-  /* Initially hide the answer */
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  /* Smooth transition for expanding */
-  background-color: #fff;
-  /* White background for answers */
-}
-
-/* Style for the answer text */
-.faq-answer p {
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-  /* Increase line height for better readability */
-  color: #555;
-  /* Slightly lighter text color for answers */
 }
