@@ -1,5 +1,4 @@
 function autoNavbar() {
-  //   console.log(window.scrollY);
   const navBar = document.getElementById("full-navbar");
   if (window.scrollY > 100) {
     navBar.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
