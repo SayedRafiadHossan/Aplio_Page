@@ -16,11 +16,15 @@
       <div class="logo">aplio</div>
       <div class="nav-container">
         <ul>
-          <li><a href="#" class="nav-link" id="home-button" fa-solid fa-angle-down dropdown_icon>Home</a></li>
+          <li><a href="#" class="nav-link" id="home-button" fa-solid fa-angle-down dropdown_icon>Home <span><i
+                  class="fa-solid fa-angle-down"></i></span></a>
+          </li>
           <li><a href="#" class="nav-link no-dropdown">About</a></li>
-          <li><a href="#" class="nav-link no-dropdown">Services</a></li>
-          <li><a href="#" class="nav-link no-dropdown">Pages</a></li>
-          <li><a href="#" class="nav-link no-dropdown">Blog</a></li>
+          <li><a href="#" class="nav-link no-dropdown">Services <span><i class="fa-solid fa-angle-down"></i></span></a>
+          </li>
+          <li><a href="#" class="nav-link no-dropdown">Pages <span><i class="fa-solid fa-angle-down"></i></span></a>
+          </li>
+          <li><a href="#" class="nav-link no-dropdown">Blog <span><i class="fa-solid fa-angle-down"></i></span></a></li>
           <li><a href="#" class="nav-link no-dropdown">Contact Us</a></li>
         </ul>
       </div>
@@ -373,7 +377,7 @@
   <div class="comments-part">
     <div class="comments-top-part">
       <h4>TESTIMONIALS</h4>
-      <h2>What our customer’s say about <br />our company</h2>
+      <h2>What our customer's say about <br />our company</h2>
     </div>
     <div>
       <div class="comments-all-card">
@@ -637,8 +641,13 @@
   <div id="search-container" class="search-backdrop">
     <div class="search-card">
       <div class="search-card-para">
-        <h2>hiiii</h2>
-        <button onclick="closeSearchModal()">+</button>
+        <div class="search-card-para-top">
+          <h2>Search</h2>
+          <button onclick="closeSearchModal()"><i class="fa-solid fa-circle-plus arrow"></i></button>
+        </div>
+        <div class="search-card-para-bottom">
+          <input type="text" placeholder="Search Component">
+        </div>
       </div>
     </div>
   </div>
@@ -675,7 +684,8 @@
           <li><a href="#">Integration</a></li>
           <li><a href="#">Support</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">404 page</a></li> </ul>
+          <li><a href="#">404 page</a></li>
+        </ul>
       </div>
       <div class="explore-part">
         <p>Contact Info</p>
