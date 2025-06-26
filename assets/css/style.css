@@ -139,7 +139,7 @@
 .trusted-businesses span {
   border: 1px solid black;
   border-radius: 25px;
-  padding: 5px;
+  padding: 0px 10px;
 }
 
 .trusted-businesses p {
@@ -162,12 +162,13 @@
   height: 40px;
   border-radius: 25px;
   position: relative;
-  margin-left: 260px;
-  margin-top: 2px;
+  margin-left: 197px;
+  margin-top: 2.5px;
   background: linear-gradient(to right, rgb(49, 46, 46) 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-in;
+  border: none;
 }
 
 .trusted-businesses button:hover {
@@ -346,7 +347,11 @@
   color: white;
 }
 
+/* <!-- companies Project Part --> */
 .company-work-parents {
+  position: absolute;
+  left: 0;
+  right: 0;
   margin: 100px auto 20px;
   padding: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
@@ -354,6 +359,7 @@
   border-radius: 12px;
   width: 640px;
   height: 180px;
+  background-color: white;
 }
 
 .company-work {
@@ -381,11 +387,12 @@
 
 .integration-color {
   background-color: #f6f8f1;
+  margin-top: 200px;
 }
 
 .integration-part {
   width: 1000px;
-  height: 550px;
+  height: 700px;
   margin: 0 auto;
   padding-top: 100px;
   display: flex;
@@ -394,9 +401,14 @@
 }
 
 .integration-right-part-first {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   position: absolute;
+}
+
+.integration-left-part {
+  margin-top: 100px;
 }
 
 .integration-right-part-img1 {
@@ -949,7 +961,7 @@
   border-radius: 12px;
 }
 
-.search-card > div {
+.search-card>div {
   border: 1px dashed #eee;
   border-radius: 12px;
   padding: 20px;
@@ -963,4 +975,92 @@
 .search-card-para button {
   all: unset;
   background-color: antiquewhite;
+}
+
+
+/* FAQ */
+
+/* Style for the main FAQ container */
+.faq-container {
+  max-width: 800px;
+  /* Limit the width for better readability */
+  margin: 50px auto;
+  /* Center the container and add vertical spacing */
+  padding: 20px;
+  font-family: 'Arial, sans-serif';
+  color: #333;
+  /* Base text color */
+}
+
+/* Style for the main title */
+.faq-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  /* Dark blue color for the title */
+}
+
+/* Style for each FAQ item */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  /* Light gray border between items */
+  overflow: hidden;
+  /* Hide overflowing content */
+}
+
+/* Style for the question buttons */
+.faq-question {
+  background-color: #ecf0f1;
+  /* Light gray background */
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+  /* Smooth background transition on hover */
+}
+
+/* Hover effect for question buttons */
+.faq-question:hover {
+  background-color: #d0d7de;
+  /* Slightly darker gray on hover */
+}
+
+/* Style for the arrow icon */
+.faq-question .arrow {
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease;
+  /* Smooth rotation transition */
+}
+
+/* Rotate the arrow when the question is active (expanded) */
+.faq-question.active .arrow {
+  transform: rotate(180deg);
+  /* Rotate arrow 180 degrees */
+}
+
+/* Style for the answer sections */
+.faq-answer {
+  max-height: 0;
+  /* Initially hide the answer */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  /* Smooth transition for expanding */
+  background-color: #fff;
+  /* White background for answers */
+}
+
+/* Style for the answer text */
+.faq-answer p {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  /* Increase line height for better readability */
+  color: #555;
+  /* Slightly lighter text color for answers */
 }
