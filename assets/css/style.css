@@ -3,12 +3,57 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Inter", Sans-serif;
-  max-width: 11700px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  padding: 150px 20px;
+  background-color: #F6F8F1;
+  position: relative;
+}
+
+.hero-section::before {
+  position: absolute;
+  content: '';
+  background: url('../images/hero-grid-shape-top.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  width: 98%;
+  height: 100%;
+  top: 0;
+}
+
+.hero-section::after {
+  position: absolute;
+  content: '';
+  background: url('../images/hero-grid-shape-bottom.png');
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 620px;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .Business-part {
-  height: 720px;
-  background-color: #f6f8f1;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  z-index: 2
 }
 
 .Business-part .header-img {
@@ -30,7 +75,7 @@
 }
 
 .header {
-  width: 1150px;
+  width: 1200px;
   margin: 0px 280px 0px 380px;
   display: flex;
   align-items: center;
@@ -114,21 +159,16 @@
 
 /* Trusted-businesses */
 
-.trusted-businesses {
-  margin-top: 100px;
-  margin-left: 50px;
-}
-
 .home-first-part {
   width: 1000px;
   margin: 0 auto;
-  padding-top: 180px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
 }
 
 .trusted-businesses h6 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 13px;
 }
 
@@ -186,13 +226,20 @@
   color: white;
 }
 
+.trusted-businesses-left-part {
+  background-image: url(/assets/images/feature-image-shape-1.png);
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 500px;
+  background-position: right, top;
+}
+
 .trusted-businesses-left-part #img-1 {
   width: 350px;
-  margin-top: 30px;
 }
 
 .trusted-businesses-left-part .bottom-img {
-  margin-left: 100px;
+  margin-left: 250px;
 }
 
 .bottom-img {
